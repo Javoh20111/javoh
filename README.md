@@ -1,5 +1,1 @@
-# javoh
-
-Assalomu alaykum
-hahah
-Lets see
+print(Hello world!)
