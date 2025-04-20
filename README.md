@@ -1,4 +1,3 @@
 # javoh
 
-,m ,
 Assalomu alaykum
