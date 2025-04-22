@@ -1,0 +1,16 @@
+*{
+    background-color: yellow;
+}
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+.header1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: blue;
+}
