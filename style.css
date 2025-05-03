@@ -433,7 +433,6 @@ section {
 }
 
 .CONTACT-submit {
-  color: white;
   margin-top: 50px;
   font-size: 24px;
   text-decoration: none;
@@ -505,6 +504,7 @@ footer p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
+  margin-top: 100px;
 }
 
 .project-card:hover {
@@ -514,4 +514,28 @@ footer p {
 .project-card img {
   width: 100%;
   border-radius: 10px;
+}
+
+.project-card h3 {
+  padding: 20px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  text-decoration: none;
+  transition: 0.5s;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(17, 17, 17, 0.4);
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.project-card a:hover {
+  color: crimson;
+  transform: scale(0.85);
+  background-color: transparent;
 }

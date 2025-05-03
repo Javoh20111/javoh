@@ -101,7 +101,7 @@
 
         <div class="skills-learning">
             <div class="learning-content">
-                <img src="images/Javascript.png" class="learning-img" alt="stylesheet">
+                <img src="images/JAVASCRIPT" class="learning-img" alt="stylesheet">
                 <p>JAVASCRIPT</p>
             </div>
             <div class="learning-content">
@@ -145,20 +145,26 @@
     </section>
 
     <section class="CONTACT">
-        <div class="CONTACT">
-        <h2 class="countact-title">CONTACT</h2>
-            <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus Sed ornare sit.<br> Amet lorem  sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
+        <div>
+          <h2 class="countact-title">CONTACT</h2>
+          <p>
+            Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus Sed ornare sit.
+            <br>Amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+          </p>
         </div>
-        <div class="CONTACT-massage">
-            <input type="text" placeholder="ENTER YOUR NAME*">
-            <input type="email" placeholder="ENTER YOUR EMAIL*">
-            <input type="number" placeholder="PHONE NUMBER">
-        </div>
-        <div class="CONTACT-text">
-            <textarea placeholder="Your message here..."></textarea>
-        </div>
-        <a class="CONTACT-submit" href="#">SUBMIT</a>
-    </section>
+      
+        <form class="CONTACT-form" action="https://formspree.io/f/mldbjqek" method="POST">
+          <div class="CONTACT-massage">
+            <input type="text" name="name" placeholder="ENTER YOUR NAME*" required>
+            <input type="email" name="email" placeholder="ENTER YOUR EMAIL*" required>
+            <input type="tel" name="phone" placeholder="PHONE NUMBER">
+          </div>
+          <div class="CONTACT-text">
+            <textarea name="message" placeholder="Your message here..." required></textarea>
+          </div>
+          <button class="CONTACT-submit" type="submit">SUBMIT</button>
+        </form>
+      </section>
 
     <footer>
         <a href=""><img src="image copy 5.png" alt="stylesheet"></a>
@@ -184,6 +190,28 @@
             }
         });
     </script>
+
+<script>
+    document.querySelector(".CONTACT-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = this;
+  
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          alert("Thank you for your message!");
+          form.reset();
+        } else {
+          alert("Oops! There was a problem submitting your form.");
+        }
+      });
+    });
+  </script>
 
 
 </body>
