@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-PROJECT</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="title-and-icon">
+              <img src="assets/car-icon.png" alt="Car Icon">
+              <h1 class="app-title">Xsoft ERP</h1>
+            </div>
+            <nav class="navigation">
+              <ul class="aside">
+                <li><a href="#"><img src="assets/home-icon.png" alt=""> Dashboard</a></li>
+                <li><a href="#"><img src="assets/reservations-icon.png" alt=""> Reservations</a></li>
+                <li><a href="#"><img src="assets/branches-icon.png" alt=""> Branches</a></li>
+                <li><a href="#"><img src="assets/staff-icon.png" alt=""> Staff</a></li>
+                <li><a href="#"><img src="assets/car-icon.png" alt=""> Cars</a></li>
+                <li><a href="#"><img src="assets/cars-category-icon.png" alt=""> Car Categories</a></li>
+                <li><a href="#"><img src="assets/staff-icon.png" alt=""> Clients</a></li>
+                <li><a href="#"><img src="assets/payment-icon.png" alt=""> Payments</a></li>
+                <li><a href="#"><img src="assets/settings-icon.png" alt=""> Settings</a></li>
+              </ul>
+            </nav>
+          </aside>
+      
+        <!-- Main Content -->
+        <main class="">
+          <header class="">
+            <h2 class="">Dashboard</h2>
+            <input type="search" placeholder="Search..." class="" />
+          </header>
+      
+          <section class="">
+            <div class="">Total Cars</div>
+            <div class="">Available Cars</div>
+            <!-- More cards -->
+          </section>
+      
+          <section class="bg-white p-6 rounded shadow">
+            <h3 class="text-lg font-semibold mb-4">Vehicle Status Overview</h3>
+            <canvas id="vehicleChart" class="w-full h-48"></canvas>
+          </section>
+        </main>
+
+        <nav class="floating-nav">
+            <div class="title-and-icon">
+                <img src="assets/car-icon.png" alt="Car Icon">
+                <h1 class="app-title">Xsoft ERP</h1>
+            </div>
+            <div class="search-btn">
+                <i class="fa fa-search search-icon"></i>
+                <input type="search" placeholder="Search..." class="search-input" />
+            </div>
+        </nav>
+</body>
+</html>
